@@ -1,0 +1,29 @@
+body {
+    font: 200 12px "Gentium Book Basic";
+    background-color: GainsBoro;
+}
+
+#title_home {
+    font: 700 70px "Slabo 27px";
+    text-align: center;
+    padding: 100px 0 50px 0;
+}
+
+
+.btn_home {
+    text-transform: uppercase;
+    font: 700 20px "Slabo 27px";
+    background: DeepSkyBlue;
+	border-radius: 5px 5px 5px 5px;
+    margin: 50px 0;
+}
+
+.btn_home:hover {
+	box-shadow: 0 8px DodgerBlue;
+	top: -2px;
+}
+
+.btn-home:active {
+	box-shadow: 0 0 DodgerBlue;
+	top: 6px;
+}
