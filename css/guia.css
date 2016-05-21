@@ -1,0 +1,33 @@
+.btn_back{
+    padding-top: 20px;
+}
+
+.link_btn{
+    color: #000;
+}
+
+.link_btn:hover{
+    color: #5a5a5a;
+}
+
+.link_btn:visited {
+    color: #000;
+}
+
+#vg_tittle {
+    font: 700 70px "Slabo 27px";
+    text-align: center;
+    padding: 50px 0 50px 0;
+}
+
+.description{
+    font: 400 15px "Roboto";
+    text-align: center;
+    padding-top: 30px;
+}
+
+#btn_scrl{
+    padding-top: 70px;
+    text-align: center;
+    align-content: center;
+}
