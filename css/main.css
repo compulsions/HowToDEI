@@ -50,13 +50,14 @@ body {
     margin: 20px 0;
 }
 
-<!-- JOGO NEI -->
+
+/* JOGO NEI */
+
 
 #puzzle_peca {
     width: 100px;
     height: 100px;
     background: yellow;
-    z-index: 2;
 }
 
 #puzzle_objectivo {
