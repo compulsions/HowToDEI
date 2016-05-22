@@ -18,8 +18,11 @@
 
 		<!-- Código para a página do BAR (contém jogo) -->	
        <div class="jogo_nei">
-           <div id="puzzle_peca"></div>
-           <div id="puzzle_objectivo"></div>
+           <div id="jogo_nei_peca1"></div>
+           <div id="jogo_nei_objectivo1"></div>
+           
+           <div id="jogo_nei_peca2"></div>
+           <div id="jogo_nei_objectivo2"></div>
            yo
        </div>
        
@@ -32,12 +35,19 @@
 
        <script>
           $(function() {
-            $( "#puzzle_peca" ).draggable({
+            $( "#jogo_nei_peca1" ).draggable({
                 containment: $('.jogo_nei')
             });
+            $( "#jogo_nei_peca2" ).draggable({
+                containment: $('.jogo_nei')
+            });  
           
            
-           $("#puzzle_objectivo").droppable( {
+           $("#jogo_nei_objectivo1").droppable( {
+                drop: handleDropEvent
+              } );
+              
+            $("#jogo_nei_objectivo2").droppable( {
                 drop: handleDropEvent
               } );
 

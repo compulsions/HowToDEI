@@ -54,16 +54,34 @@ body {
 /* JOGO NEI */
 
 
-#puzzle_peca {
+#jogo_nei_peca1 {
     width: 100px;
     height: 100px;
     background: yellow;
+    z-index: 2;
 }
 
-#puzzle_objectivo {
+#jogo_nei_objectivo1 {
     position: absolute;
     top: 80px;
     right: 0;
+    width: 100px;
+    height: 100px;
+    background: teal;
+    z-index: 1;
+}
+
+#jogo_nei_peca2 {
+    width: 100px;
+    height: 100px;
+    background: limegreen;
+    z-index: 2;
+}
+
+#jogo_nei_objectivo2 {
+    position: absolute;
+    top: 160px;
+    right: 230px;
     width: 100px;
     height: 100px;
     background: teal;
