@@ -17,7 +17,7 @@
 #vg_tittle {
     font: 700 70px "Slabo 27px";
     text-align: center;
-    padding: 50px 0 50px 0;
+    padding: 70px 0 30px 0;
 }
 
 .description{
@@ -27,7 +27,25 @@
 }
 
 #btn_scrl{
-    padding-top: 70px;
+    padding-top:80px;
     text-align: center;
     align-content: center;
 }
+
+#vg_subtittle{
+    font: 700 30px "Slabo 27px";
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 20px;
+}
+
+.mapa2 {
+    width: 100%;
+    height: 300px;
+    background: hotpink;
+    text-align: center;
+    margin: 40px 0 100px 0;
+    z-index: -1;
+}
+
+
