@@ -6,10 +6,22 @@
 		<title>How to DEI</title>
 
 		<link rel="stylesheet" type="text/css" href="css/main.css">
+        <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+        <link href='https://fonts.googleapis.com/css?family=Gentium+Book+Basic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
+        <script src="js/jquery-1.12.3.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/flickity-docs.min.js"></script>
+       <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
    </head>
    <body>
 
 		<!-- Código para a página do BAR (contém jogo) -->	
+       <div class="jogo_nei">
+           <div id="puzzle_peca"></div>
+           <div id="puzzle_objectivo"></div>
+           yo
+       </div>
        
        <!-- Contém:
                 - Foto de fundo do NEI
@@ -18,5 +30,23 @@
         -->
 
 
+       <script>
+          $(function() {
+            $( "#puzzle_peca" ).draggable({
+                containment: $('.jogo_nei')
+            });
+          
+           
+           $("#puzzle_objectivo").droppable( {
+                drop: handleDropEvent
+              } );
+
+            function handleDropEvent( event, ui ) {
+              alert( "YAY YOU!" );
+            }
+           
+           });
+
+      </script>
    </body>
 </html>
