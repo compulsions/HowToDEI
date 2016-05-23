@@ -40,12 +40,15 @@
                <h3 id="vg_subtittle">Escolhe a entrada para começares a visita:</h3>
                <hr>
                <div class="mapa2">
+                   <a href="entrada1.html"><div class="entrada1"></div></a>
+                   <a href="entrada2.html"><div class="entrada2"></div></a>
                </div>
             </div>
       </div>
      <div id="scrl_guide"></div>
       <script>
          $("#btnScrl").click(function() {
+             console.log("cenas: " + $("#scrl_guide").offset().top);
             $('html, body').animate({
                 scrollTop: $("#scrl_guide").offset().top
             }, 2000);
