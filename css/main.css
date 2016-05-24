@@ -4,6 +4,17 @@ body {
     color: red;
 }
 
+.page_title {
+    font: 700 46px "Slabo 27px";
+    text-align: center;
+    padding: 10px;
+}
+
+.page_subtitle {
+    font: 700 30px "Slabo 27px";
+    text-align: center;
+}
+
 #title_home {
     font: 700 70px "Slabo 27px";
     text-align: center;
@@ -63,8 +74,8 @@ body {
 
 #jogo_nei_objectivo1 {
     position: absolute;
-    top: 80px;
-    right: 0;
+    top: 40wh;
+    right: 10vw;
     width: 100px;
     height: 100px;
     background: teal;
@@ -80,8 +91,8 @@ body {
 
 #jogo_nei_objectivo2 {
     position: absolute;
-    top: 160px;
-    right: 230px;
+    top: 50vh;
+    right: 70vw;
     width: 100px;
     height: 100px;
     background: teal;

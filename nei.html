@@ -16,6 +16,9 @@
    </head>
    <body>
 
+       <h2 class="page_title"> Núcleo de Estudantes </h2>
+       <h4 class="page_subtitle"> NEI </h4>
+       
 		<!-- Código para a página do BAR (contém jogo) -->	
        <div class="jogo_nei">
            <div id="jogo_nei_peca1"></div>
@@ -36,19 +39,24 @@
        <script>
           $(function() {
             $( "#jogo_nei_peca1" ).draggable({
-                containment: $('.jogo_nei')
+                containment: $('.jogo_nei'),
+                revert: "invalid"
+                
             });
             $( "#jogo_nei_peca2" ).draggable({
-                containment: $('.jogo_nei')
+                containment: $('.jogo_nei'),
+                revert: "invalid"
             });  
           
            
            $("#jogo_nei_objectivo1").droppable( {
-                drop: handleDropEvent
+                drop: handleDropEvent,
+                accept: '#jogo_nei_peca1'
               } );
               
             $("#jogo_nei_objectivo2").droppable( {
-                drop: handleDropEvent
+                drop: handleDropEvent,
+                accept: '#jogo_nei_peca2'
               } );
 
             function handleDropEvent( event, ui ) {
