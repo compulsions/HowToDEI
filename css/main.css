@@ -63,11 +63,14 @@ body {
 
 
 /* JOGO NEI */
-
-
-#jogo_nei_peca1 {
+.peca_jogo_nei {
     width: 100px;
     height: 100px;
+    padding: 40px;
+    font: 700 20px "Slabo 27px";
+}
+
+#jogo_nei_peca1 {
     background: yellow;
     z-index: 2;
 }
@@ -76,15 +79,11 @@ body {
     position: absolute;
     top: 40wh;
     right: 10vw;
-    width: 100px;
-    height: 100px;
     background: teal;
     z-index: 1;
 }
 
 #jogo_nei_peca2 {
-    width: 100px;
-    height: 100px;
     background: limegreen;
     z-index: 2;
 }
@@ -93,8 +92,6 @@ body {
     position: absolute;
     top: 50vh;
     right: 70vw;
-    width: 100px;
-    height: 100px;
     background: teal;
     z-index: 1;
 }
