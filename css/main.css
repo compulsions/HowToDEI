@@ -107,3 +107,37 @@ body {
     from {background-color: teal;}
     to {background-color: darkblue;}
 }
+
+/* JOGO BAR */
+.peca_jogo_bar {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    transform-style: preserve-3d;
+    transition: all 1.0s linear;
+    transform: rotateY(0deg);
+}
+
+.peca_jogo_bar:hover {
+    transform: rotateY(180deg);
+}
+
+.jogo_bar {
+    text-align: center;
+}
+
+.costas {
+    background-color: pink;
+    width: 100%;
+    height: 100%;
+}
+
+.frente {
+    position: absolute;
+    transform: rotateY(0deg);
+    backface-visibility: hidden;
+    background: darkslateblue;
+    width: 100%;
+    height: 100%;
+}
