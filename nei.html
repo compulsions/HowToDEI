@@ -50,7 +50,7 @@
            
            $("#jogo_nei_objectivo1").droppable( {
                 drop: handleDropEvent,
-                accept: '#jogo_nei_peca1'
+                accept: '#jogo_nei_peca1',
               } );
               
             $("#jogo_nei_objectivo2").droppable( {
@@ -60,6 +60,8 @@
 
             function handleDropEvent( event, ui ) {
               alert( "YAY YOU!" );
+                 $( this )
+                      .addClass("goal")
             }
            
            });

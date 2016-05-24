@@ -84,7 +84,7 @@ body {
 }
 
 #jogo_nei_peca2 {
-    background: limegreen;
+    background: pink;
     z-index: 2;
 }
 
@@ -94,4 +94,16 @@ body {
     right: 70vw;
     background: teal;
     z-index: 1;
+}
+
+.goal {
+    animation-name: goal;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes goal {
+    from {background-color: teal;}
+    to {background-color: darkblue;}
 }
