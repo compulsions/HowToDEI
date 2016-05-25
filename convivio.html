@@ -22,8 +22,42 @@
                 - Aparece e desaparece texto
                 - Mini jogo
         -->
+       <h2 class="page_title"> Sala de Convivio </h2>
+       <h4 class="page_subtitle"> Onde podes estar à vontade </h4>
+       
        <div class="convivio_mesa">
+           <span id="play" class="controlos">start</span>
+           <span id="pause" class="controlos">stop</span>
+           <span id="advance" class="controlos"> > </span>
        </div>
+       
+       <script>
+        $(document).ready(function() {
+            var audioElement = document.createElement('audio');
+            audioElement.setAttribute('src', 'audio/audio.mp3');
+            //audioElement.load()
+
+            $.get();
+
+            audioElement.addEventListener("load", function() {
+                audioElement.play();
+            }, true);
+
+            $('#play').click(function() {
+                audioElement.play();
+            });
+
+            $('#pause').click(function() {
+                audioElement.pause();
+            });
+            
+            $('#advance').click(function() {
+                audioElement.pause();
+                audioElement.setAttribute('src', 'audio/audio2.mp3');
+            });
+            
+        });
+</script>  
 
 
    </body>
