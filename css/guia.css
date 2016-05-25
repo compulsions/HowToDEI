@@ -1,5 +1,9 @@
+html, body{
+    height: 100%;
+}
+/** Página da Visita Guiada **/
 .btn_back{
-    padding-top: 20px;
+    padding-top: 40px;
 }
 
 .link_btn{
@@ -17,7 +21,7 @@
 #vg_tittle {
     font: 700 70px "Slabo 27px";
     text-align: center;
-    padding: 70px 0 30px 0;
+    padding: 80px 0 30px 0;
 }
 
 .description{
@@ -35,8 +39,8 @@
 #vg_subtittle{
     font: 700 30px "Slabo 27px";
     text-align: center;
-    padding-top: 80px;
-    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 40px;
 }
 
 .mapa2 {
@@ -44,7 +48,7 @@
     height: 300px;
     background: hotpink;
     text-align: center;
-    margin: 40px 0 100px 0;
+    margin-bottom:100px;
     z-index: -1;
 }
 
@@ -60,4 +64,37 @@
     position:relative;
     top: 78%;
     font-size: 18px;
+}
+
+.ecraGuia{
+    height: 100%;
+}
+
+
+/** Página dos icons com as Categorias **/
+
+#CategoriasIcons{
+    padding-top: 50px;
+    text-align: center;
+}
+
+.Catg{
+    padding-top: 20px;
+    text-align: center;
+}
+
+.Catg a{
+    color: #333;
+    text-decoration: none;
+}
+
+.Catg a:hover{
+    color: #4b4b4b;
+    text-decoration: none;
+}
+
+.Cat_subtitle{
+    font: 700 20px "Slabo 27px";
+    text-align: center;
+    padding-top: 10px;
 }
