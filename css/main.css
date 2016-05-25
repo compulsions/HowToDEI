@@ -108,11 +108,17 @@ body {
     to {background-color: darkblue;}
 }
 
+
+
+
+
+
 /* JOGO BAR */
 .peca_jogo_bar {
     display: inline-block;
-    width: 150px;
-    height: 150px;
+    width: 25vh;
+    height: 25vh;
+    min-height: 50px;
     margin: 10px;
     transform-style: preserve-3d;
     transition: all 1.0s linear;
@@ -128,16 +134,35 @@ body {
 }
 
 .costas {
-    background-color: pink;
+    background-color: deepskyblue;
     width: 100%;
     height: 100%;
 }
 
 .frente {
     position: absolute;
-    transform: rotateY(0deg);
     backface-visibility: hidden;
     background: darkslateblue;
     width: 100%;
     height: 100%;
+}
+
+#jogo_bar_1 .escolhida, #jogo_bar_6 .escolhida {
+    background: pink;
+}
+
+#jogo_bar_2 .escolhida, #jogo_bar_8 .escolhida {
+    background: yellow;
+}
+
+#jogo_bar_3 .escolhida, #jogo_bar_4 .escolhida {
+    background: purple;
+}
+
+#jogo_bar_5 .escolhida, #jogo_bar_9 .escolhida {
+    background: limegreen;
+}
+
+.apagado {
+    visibility: hidden;
 }

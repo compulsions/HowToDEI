@@ -39,7 +39,41 @@
                 - Mini jogo
         -->
 
+    <script>
+        var lista = "";
+        
+        $(".peca_jogo_bar").on('Click', verificar);
 
+        
+        $("#jogo_bar_1").click(function() {
+            //alert("clicky");
+            lista = lista + "1";
+            console.log(lista);
+        });
+        
+        $("#jogo_bar_6").click(function() {
+            //alert("clicky");
+            lista = lista + "6";
+            console.log(lista);
+        });
+        
+        function verificar() {
+            $(".costas").addClass("escolhida");
+            if (lista.length == 2){
+                console.log("não te curto");
+                if (lista == "16" || lista == "61"){
+                    console.log("és bué fixe, fizeste um par"); 
+                    $("#jogo_bar_1").addClass("apagado");
+                    $("#jogo_bar_6").addClass("apagado");
+                   // lista = "";
+                   // console.log("apagando");
+                }// else {
+                  //  lista = "";
+                  //  console.log("apagando");
+                //}
+            }
+         }; 
+    </script>
 
    </body>
 </html>
