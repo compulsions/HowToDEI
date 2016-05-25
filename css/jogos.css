@@ -1,0 +1,105 @@
+
+/* JOGO NEI */
+.peca_jogo_nei {
+    width: 100px;
+    height: 100px;
+    padding: 40px;
+    font: 700 20px "Slabo 27px";
+}
+
+#jogo_nei_peca1 {
+    background: yellow;
+    z-index: 2;
+}
+
+#jogo_nei_objectivo1 {
+    position: absolute;
+    top: 40wh;
+    right: 10vw;
+    background: teal;
+    z-index: 1;
+}
+
+#jogo_nei_peca2 {
+    background: pink;
+    z-index: 2;
+}
+
+#jogo_nei_objectivo2 {
+    position: absolute;
+    top: 50vh;
+    right: 70vw;
+    background: teal;
+    z-index: 1;
+}
+
+.goal {
+    animation-name: goal;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes goal {
+    from {background-color: teal;}
+    to {background-color: darkblue;}
+}
+
+
+
+
+
+
+/* JOGO BAR */
+.peca_jogo_bar {
+    display: inline-block;
+    width: 25vh;
+    height: 25vh;
+    min-height: 50px;
+    margin: 10px;
+    transform-style: preserve-3d;
+    transition: all 1.0s linear;
+    transform: rotateY(0deg);
+}
+
+.peca_jogo_bar:hover {
+    transform: rotateY(180deg);
+}
+
+.jogo_bar {
+    text-align: center;
+}
+
+.costas {
+    background-color: deepskyblue;
+    width: 100%;
+    height: 100%;
+}
+
+.frente {
+    position: absolute;
+    backface-visibility: hidden;
+    background: darkslateblue;
+    width: 100%;
+    height: 100%;
+}
+
+#jogo_bar_1 .escolhida, #jogo_bar_6 .escolhida {
+    background: pink;
+}
+
+#jogo_bar_2 .escolhida, #jogo_bar_8 .escolhida {
+    background: yellow;
+}
+
+#jogo_bar_3 .escolhida, #jogo_bar_4 .escolhida {
+    background: purple;
+}
+
+#jogo_bar_5 .escolhida, #jogo_bar_9 .escolhida {
+    background: limegreen;
+}
+
+.apagado {
+    visibility: hidden;
+}
