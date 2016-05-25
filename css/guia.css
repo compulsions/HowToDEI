@@ -43,7 +43,7 @@ html, body{
     padding-bottom: 40px;
 }
 
-.mapa2 {
+.mapa_guia {
     width: 100%;
     height: 300px;
     background: hotpink;
@@ -73,8 +73,13 @@ html, body{
 
 /** Página dos icons com as Categorias **/
 
+.page_title2 {
+    font: 700 46px "Slabo 27px";
+    text-align: center;
+    padding: 0px 10px 10px 10px;
+}
+
 #CategoriasIcons{
-    padding-top: 50px;
     text-align: center;
 }
 
@@ -89,12 +94,49 @@ html, body{
 }
 
 .Catg a:hover{
-    color: #4b4b4b;
+    color: #6f6f6f;
     text-decoration: none;
 }
 
 .Cat_subtitle{
-    font: 700 20px "Slabo 27px";
+    font: 700 15px "Slabo 27px";
     text-align: center;
-    padding-top: 10px;
+}
+
+.mapa_guiacategorias {
+    width: 100%;
+    height: 350px;
+    background: hotpink;
+    text-align: center;
+    margin-top: 20px;
+    z-index: -1;
+}
+
+/** Pontos no mapa **/
+
+.ex1{
+    position:relative;
+    top: 30%;
+    font-size: 18px;
+}
+
+.ex2{
+    position:relative;
+    top: 78%;
+    right: 15%;
+    font-size: 18px;
+}
+
+.ex3{
+    position:relative;
+    top: 50%;
+    right: 20%;
+    font-size: 18px;
+}
+
+.ex4{
+    position:relative;
+    top: 69%;
+    right: 10%;
+    font-size: 18px;
 }
