@@ -37,7 +37,7 @@
            <span id="advance" class="controlos"> > </span>
        </div>
        
-       <div id="musica"></div>
+       <div id="musica_titulo"></div>
        
        <span id="convivio_animacao"></span>
        
@@ -46,7 +46,7 @@
             var actual = "zero";
             var audioElement = document.createElement('audio');
             audioElement.setAttribute('src', 'audio/audio.mp3');
-            $('#musica').html("Natasha Bedingfield - Unwritten");
+            $('#musica_titulo').html("Natasha Bedingfield - Unwritten");
             audioElement.setAttribute("autoplay", true);
             //audioElement.load()
 
@@ -58,14 +58,14 @@
 
             $('#play').click(function() {
                 audioElement.play();
-                $('#musica').show();
+                $('#musica_titulo').show();
                 $("#convivio_animacao").addClass(actual);
 
             });
 
             $('#pause').click(function() {
                 audioElement.pause();
-                $('#musica').hide();
+                $('#musica_titulo').hide();
                 $("#convivio_animacao").removeClass("zero um");
                 
             });
@@ -74,12 +74,12 @@
                 audioElement.pause();
                 if (actual == "zero"){
                     audioElement.setAttribute('src', 'audio/audio2.mp3');
-                    $('#musica').html("Jimmy Eat World - The Middle");
+                    $('#musica_titulo').html("Jimmy Eat World - The Middle");
                     actual = "um";
                     $("#convivio_animacao").addClass("um").removeClass("zero");
                 } else if (actual == "um"){
                       audioElement.setAttribute('src', 'audio/audio.mp3');
-                        $('#musica').html("Natasha Bedingfield - Unwritten");
+                        $('#musica_titulo').html("Natasha Bedingfield - Unwritten");
                     $("#convivio_animacao").addClass("zero").removeClass("um");
                     actual = "zero";
                     }

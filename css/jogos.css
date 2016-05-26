@@ -5,7 +5,7 @@ body {
 
 /* JOGO NEI */
 .jogo_nei {
-    width: 100%;
+    width: 100vw;
     height: 60vh;
     background: deepskyblue;
     text-align: center;
@@ -13,9 +13,9 @@ body {
 }
 
 .peca_jogo_nei {
-    width: 100px;
-    height: 100px;
-    padding: 40px;
+    width: 10vh;
+    height: 10vh;
+    padding: 2%;
     font: 300 20px "Slabo 27px";
 }
 
@@ -129,12 +129,12 @@ body {
     height: 10vw;
     min-height: 50px;
     background: yellow;
-    margin: 50px 0 10px 0;
-    padding: 40px;
+    margin: 1% 0 2% 0;
+    padding: 4%;
     font: 300 20px "Slabo 27px";
 }
 
-#musica {
+#musica_titulo {
     font: 300 20px "Slabo 27px";
     margin: 20px 0;
 }
@@ -156,6 +156,7 @@ body {
     border-radius: 100%;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+    animation-timing-function: ease-in-out;
 }
 
 
@@ -197,6 +198,7 @@ body {
     }
     
     50% {
+        transform: scale(0.8);
         background: purple;    
     }
     
