@@ -61,3 +61,20 @@ body {
     margin: 20px 0;
 }
 
+/** Botão para voltar para trás **/
+
+.btn_back{
+    padding-top: 40px;
+}
+
+.link_btn{
+    color: #000;
+}
+
+.link_btn:hover{
+    color: #5a5a5a;
+}
+
+.link_btn:visited {
+    color: #000;
+}
