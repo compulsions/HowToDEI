@@ -47,6 +47,7 @@
             var audioElement = document.createElement('audio');
             audioElement.setAttribute('src', 'audio/audio.mp3');
             $('#musica').html("Natasha Bedingfield - Unwritten");
+            audioElement.setAttribute("autoplay", true);
             //audioElement.load()
 
             $.get();
@@ -58,12 +59,15 @@
             $('#play').click(function() {
                 audioElement.play();
                 $('#musica').show();
+                $("#convivio_animacao").addClass(actual);
 
             });
 
             $('#pause').click(function() {
                 audioElement.pause();
                 $('#musica').hide();
+                $("#convivio_animacao").removeClass("zero um");
+                
             });
             
             $('#advance').click(function() {
@@ -72,9 +76,11 @@
                     audioElement.setAttribute('src', 'audio/audio2.mp3');
                     $('#musica').html("Jimmy Eat World - The Middle");
                     actual = "um";
+                    $("#convivio_animacao").addClass("um").removeClass("zero");
                 } else if (actual == "um"){
                       audioElement.setAttribute('src', 'audio/audio.mp3');
                         $('#musica').html("Natasha Bedingfield - Unwritten");
+                    $("#convivio_animacao").addClass("zero").removeClass("um");
                     actual = "zero";
                     }
             });

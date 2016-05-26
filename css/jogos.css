@@ -130,6 +130,8 @@ body {
     min-height: 50px;
     background: yellow;
     margin: 50px 0 10px 0;
+    padding: 40px;
+    font: 300 20px "Slabo 27px";
 }
 
 #musica {
@@ -137,12 +139,14 @@ body {
     margin: 20px 0;
 }
 
-#musica .zero {
-    color: purple;
+.zero {
+    animation-name: bailando;
+    animation-duration: 2s;
 }
 
-#musica .um {
-    color: orange;
+.um {
+    animation-name: bailando1;
+    animation-duration: 5s;
 }
 
 #convivio_animacao {
@@ -150,8 +154,6 @@ body {
     height: 10vw;;
     width: 10vw;;
     border-radius: 100%;
-    animation-name: bailando;
-    animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
@@ -171,13 +173,42 @@ body {
         background: powderblue;    
     }
     
-    20% {
+    80% {
         background: limegreen;    
     }
     
     100% {
         background: deepskyblue;
         margin-top: 10%;
+    }
+
+}
+
+@keyframes bailando1 {
+    0% {
+        margin-left: -100%;
+        transform: scale(0.5);
+        background: deepskyblue;
+    }
+    
+    20% {
+        transform: scale(1);
+        background: pink;    
+    }
+    
+    50% {
+        background: purple;    
+    }
+    
+    80% {
+        transform: scale(1);
+        background: orange;    
+    }
+    
+    100% {
+        background: yellow;
+        margin-left: 100%;
+        transform: scale(0.5);
     }
 
 }
