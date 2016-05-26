@@ -1,23 +1,22 @@
+
 body {
     font: 200 12px "Gentium Book Basic";
     background-color: GainsBoro;
-    color: red;
+    text-align: center;
 }
 
 .page_title {
     font: 700 46px "Slabo 27px";
-    text-align: center;
-    padding: 10px;
+    padding: 5px;
 }
 
-.page_subtitle {
-    font: 700 30px "Slabo 27px";
-    text-align: center;
+.texto_pagina {
+    font: 400 18px "Gentium Book Basic";
+    margin: 20px 0;
 }
 
 #title_home {
     font: 700 70px "Slabo 27px";
-    text-align: center;
     padding: 100px 0 50px 0;
 }
 
