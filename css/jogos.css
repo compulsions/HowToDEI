@@ -1,10 +1,22 @@
+body {
+    text-align: center;
+    padding: 0 100px;
+}
 
 /* JOGO NEI */
+.jogo_nei {
+    width: 100%;
+    height: 60vh;
+    background: deepskyblue;
+    text-align: center;
+    margin: 10% 0;
+}
+
 .peca_jogo_nei {
     width: 100px;
     height: 100px;
     padding: 40px;
-    font: 700 20px "Slabo 27px";
+    font: 300 20px "Slabo 27px";
 }
 
 #jogo_nei_peca1 {
@@ -16,7 +28,7 @@
     position: absolute;
     top: 40wh;
     right: 10vw;
-    background: teal;
+    background: white;
     z-index: 1;
 }
 
@@ -29,7 +41,7 @@
     position: absolute;
     top: 50vh;
     right: 70vw;
-    background: teal;
+    background: white;
     z-index: 1;
 }
 
@@ -41,8 +53,8 @@
 }
 
 @keyframes goal {
-    from {background-color: teal;}
-    to {background-color: darkblue;}
+    from {background-color: white;}
+    to {background-color: deepskyblue;}
 }
 
 
@@ -68,6 +80,7 @@
 
 .jogo_bar {
     text-align: center;
+    margin: 50px 0;
 }
 
 .costas {
@@ -116,4 +129,55 @@
     height: 10vw;
     min-height: 50px;
     background: yellow;
+    margin: 50px 0 10px 0;
+}
+
+#musica {
+    font: 300 20px "Slabo 27px";
+    margin: 20px 0;
+}
+
+#musica .zero {
+    color: purple;
+}
+
+#musica .um {
+    color: orange;
+}
+
+#convivio_animacao {
+    display: inline-block;
+    height: 10vw;;
+    width: 10vw;;
+    border-radius: 100%;
+    animation-name: bailando;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+@keyframes bailando {
+    0% {
+        margin-top: 0%;
+        background: deepskyblue;
+    }
+    
+    20% {
+        background: yellow;    
+    }
+    
+    50% {
+        background: powderblue;    
+    }
+    
+    20% {
+        background: limegreen;    
+    }
+    
+    100% {
+        background: deepskyblue;
+        margin-top: 10%;
+    }
+
 }
