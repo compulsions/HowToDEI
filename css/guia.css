@@ -1,22 +1,8 @@
 html, body{
     height: 100%;
 }
+
 /** Página da Visita Guiada **/
-.btn_back{
-    padding-top: 40px;
-}
-
-.link_btn{
-    color: #000;
-}
-
-.link_btn:hover{
-    color: #5a5a5a;
-}
-
-.link_btn:visited {
-    color: #000;
-}
 
 #vg_tittle {
     font: 700 70px "Slabo 27px";

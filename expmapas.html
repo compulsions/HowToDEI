@@ -6,16 +6,73 @@
 		<title>How to DEI</title>
 
 		<link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/versaoExp.css">
+        <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Gentium+Book+Basic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700' rel='stylesheet' type='text/css'>
+        <script src="http://code.jquery.com/jquery-latest.min.js"
+        type="text/javascript"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/flickity-docs.min.js"></script>
    </head>
    <body>
 
-       <!-- Código para a página do Mapa versão experiente -->	
-       
-       <!-- Contém:
-                - titulo
-                - mapas que mudam conforme as categorias
-                - mini categorias
-        -->
-       
+       <!-- Back btn -->	
+       <div class="col-xs-10 col-sm-10 col-sm-offset-1 col-xs-offset-2 btn_back">
+         <a class="link_btn" href="guia.html"><i class="fa fa-chevron-circle-left fa-2x" aria-hidden="true"></i></a>
+       </div>
+       <!-- Titulo -->
+        <div class="container">
+         <div class="row">
+            <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+               <h2 class="ExpMap_title"> DEI Map </h2>
+               <h4 class="ExpMap_subtittle">Choose the category you want to see</h4>
+               <hr>
+            </div>
+          </div>
+          </div>
+       <!-- Categorias -->
+        <div class="container">
+                 <div class="row ExpCategorias">
+                     <!--Categoria Info Locais Importantes-->
+                         <a id="ExpInfoImportantes" class="ExpCat" data-toggle="tooltip" title="Important Locations" data-placement="bottom"><i class="fa fa-exclamation-circle fa-2x" aria-hidden="true"></i>
+                         </a>
+                     <!--Categoria Info Locais Estudo-->
+                         <a id="ExpLocaisEstudo" class="ExpCat" data-toggle="tooltip" title="Study Locations" data-placement="bottom"><i class="fa fa-graduation-cap fa-2x" aria-hidden="true"></i>
+                         </a>
+                     <!--Categoria Info Locais convívio-->
+                         <a id="ExpLocaisConvivio" class="ExpCat" data-toggle="tooltip" title="Socializing Locations" data-placement="bottom"><i class="fa fa-commenting-o fa-2x" aria-hidden="true"></i>
+                          </a>
+                     <!--Categoria Info WC's-->
+                         <a id="ExpInfoWC" class="ExpCat" data-toggle="tooltip" title="WC's" data-placement="bottom"><i class="fa fa-info-circle fa-2x" aria-hidden="true"></i>
+                         </a>
+                </div>
+            
+                <!-- Mapa -->
+                <div class="row">
+                    <div class="container">
+                        <div class="mapa_expcategorias">
+                            <div id="locaisImportantes_exp">
+                                <div class="ex1"><img src="img/link_1.png" height="30px"></div>
+                            </div>
+            
+                            <div id="locaisEstudo_exp">
+                                <div class="ex2"><img src="img/link_1.png" height="30px"></div>
+                            </div>
+            
+                            <div id="locaisConvivio_exp">
+                                <div class="ex3"><img src="img/link_2.png" height="30px"></div>
+                            </div>
+            
+                            <div id="wcs_exp">
+                                <div class="ex4"><img src="img/link_1.png" height="30px"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             </div> 
+       <script src="js/mapa_verExp.js"></script>
    </body>
 </html>
