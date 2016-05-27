@@ -30,16 +30,14 @@
 		<!-- Código para a página do BAR (contém jogo) -->	
        <div class="jogo_bar">
            <span id="jogo_bar_1" class="peca_jogo_bar"><div class="frente"></div><div class="costas"></div></span>
-           <span id="jogo_bar_2" class="peca_jogo_bar"><div class="frente"></div><div class="costas"></div></span>
+           <span id="jogo_bar_2" class="peca_jogo_bar"><div class="frente"></div><div class="costas"></div></span> 
            <span id="jogo_bar_3" class="peca_jogo_bar"><div class="frente"></div><div class="costas"></div></span>
-           <br>
            <span id="jogo_bar_4" class="peca_jogo_bar"><div class="frente"></div><div class="costas"></div></span>
+           <br>
            <span id="jogo_bar_5" class="peca_jogo_bar"><div class="frente"></div><div class="costas"></div></span>
            <span id="jogo_bar_6" class="peca_jogo_bar"><div class="frente"></div><div class="costas"></div></span>
-           <br>
            <span id="jogo_bar_7" class="peca_jogo_bar"><div class="frente"></div><div class="costas"></div></span>
            <span id="jogo_bar_8" class="peca_jogo_bar"><div class="frente"></div><div class="costas"></div></span>
-           <span id="jogo_bar_9" class="peca_jogo_bar"><div class="frente"></div><div class="costas"></div></span>
        </div>
        
        <!-- Contém:
@@ -102,11 +100,6 @@
             verificar();
         });
         
-        $("#jogo_bar_9").click(function() {
-            lista = lista + "9";
-            console.log(lista);
-            verificar();
-        });
         
         function verificar() {
             if (lista.length == 2){
@@ -128,10 +121,10 @@
                     $("#jogo_bar_4").addClass("apagado");
                 }
                 
-                else if (lista == "59" || lista == "95"){
+                else if (lista == "57" || lista == "75"){
                     console.log("és bué fixe, fizeste um par"); 
                     $("#jogo_bar_5").addClass("apagado");
-                    $("#jogo_bar_9").addClass("apagado");
+                    $("#jogo_bar_7").addClass("apagado");
                 }
                 
             } else if (lista.length > 2) {

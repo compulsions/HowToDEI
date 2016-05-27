@@ -97,19 +97,23 @@ body {
 }
 
 #jogo_bar_1 .costas, #jogo_bar_6 .costas {
-    background: pink;
+    background-image: url("/img/bar-01.png");
+    background-size:contain;
 }
 
 #jogo_bar_2 .costas, #jogo_bar_8 .costas {
-    background: yellow;
+    background-image: url("/img/bar-02.png");
+    background-size:contain;
 }
 
 #jogo_bar_3 .costas, #jogo_bar_4 .costas {
-    background: purple;
+    background-image: url("/img/bar-03.png");
+    background-size:contain;
 }
 
-#jogo_bar_5 .costas, #jogo_bar_9 .costas {
-    background: limegreen;
+#jogo_bar_5 .costas, #jogo_bar_7 .costas {
+    background-image: url("/img/bar-04.png");
+    background-size:contain;
 }
 
 .apagado {
@@ -149,7 +153,7 @@ body {
 }
 
 .dois {
-    animation-name: bailando1;
+    animation-name: bailando2;
     animation-duration: 5s;
 }
 
@@ -191,7 +195,7 @@ body {
 
 @keyframes bailando1 {
     0% {
-        margin-left: -100%;
+        margin-left: -50%;
         transform: scale(0.5);
         background: deepskyblue;
     }
@@ -213,7 +217,32 @@ body {
     
     100% {
         background: yellow;
-        margin-left: 100%;
+        margin-left: 50%;
+        transform: scale(0.5);
+    }
+
+}
+
+@keyframes bailando2 {
+    0% {
+        margin-left: -50%;
+        transform: scale(0.5);
+        background: deepskyblue;
+    }
+    
+    30% {
+        transform: scale(1);
+        background: pink;    
+    }
+    
+    70% {
+        transform: scale(0.8);
+        background: purple;    
+    }
+
+    100% {
+        background: yellow;
+        margin-left: 50%;
         transform: scale(0.5);
     }
 
