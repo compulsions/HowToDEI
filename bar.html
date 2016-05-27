@@ -51,35 +51,84 @@
     <script>
         var lista = "";
         
-        $(".peca_jogo_bar").on('Click', verificar);
+        $(".peca_jogo_bar").click(verificar);
 
         
         $("#jogo_bar_1").click(function() {
-            $("#peca_jogo_bar1").addClass("escolhida");
             lista = lista + "1";
             console.log(lista);
         });
         
+        $("#jogo_bar_2").click(function() {
+            lista = lista + "2";
+            console.log(lista);
+        });
+        
+        $("#jogo_bar_3").click(function() {
+            lista = lista + "3";
+            console.log(lista);
+        });
+        
+        $("#jogo_bar_4").click(function() {
+            lista = lista + "4";
+            console.log(lista);
+        });
+        
+        $("#jogo_bar_5").click(function() {
+            lista = lista + "5";
+            console.log(lista);
+        });
+        
         $("#jogo_bar_6").click(function() {
-            $("#peca_jogo_bar6").addClass("escolhida");
             lista = lista + "6";
+            console.log(lista);
+        });
+        
+        $("#jogo_bar_7").click(function() {
+            lista = lista + "7";
+            console.log(lista);
+        });
+        
+        $("#jogo_bar_8").click(function() {
+            lista = lista + "8";
+            console.log(lista);
+        });
+        
+        $("#jogo_bar_9").click(function() {
+            lista = lista + "9";
             console.log(lista);
         });
         
         function verificar() {
             if (lista.length == 2){
-                console.log("não te curto");
                 if (lista == "16" || lista == "61"){
                     console.log("és bué fixe, fizeste um par"); 
                     $("#jogo_bar_1").addClass("apagado");
-                    $("#jogo_bar_6").addClass("apagado");
-                   // lista = "";
-                   // console.log("apagando");
-                }// else {
-                  //  lista = "";
-                  //  console.log("apagando");
-                //}
-            }
+                    $("#jogo_bar_6").addClass("apagado");    
+                } 
+                
+                else if (lista == "28" || lista == "82"){
+                    console.log("és bué fixe, fizeste um par"); 
+                    $("#jogo_bar_2").addClass("apagado");
+                    $("#jogo_bar_8").addClass("apagado");
+                }
+                
+                else if (lista == "34" || lista == "43"){
+                    console.log("és bué fixe, fizeste um par"); 
+                    $("#jogo_bar_3").addClass("apagado");
+                    $("#jogo_bar_4").addClass("apagado");
+                }
+                
+                else if (lista == "59" || lista == "95"){
+                    console.log("és bué fixe, fizeste um par"); 
+                    $("#jogo_bar_5").addClass("apagado");
+                    $("#jogo_bar_9").addClass("apagado");
+                }
+                
+            } else if (lista.length >= 3) {
+                    lista = "";
+                    console.log("apagando");
+                }
          }; 
     </script>
 
