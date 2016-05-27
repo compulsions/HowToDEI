@@ -55,14 +55,16 @@ Guided Tour</h1>
                <h3 id="vg_subtittle">Choose the entry to start the tour: </h3>
                <hr>
                <div class="mapa_guia">
-                   <div class="entrada1"><a href="entrada1.html"><img src="img/link_2.png" alt="Entrada 1" height="20px"></a></div>
-                    <div class="entrada2"><a href="entrada2.html"><img src="img/link_2.png" alt="Entrada 2" height="30px"></a></div>
+                   <div class="entrada1"><a href="entrada1.html" data-toggle="tooltip" title="Top Entrance" data-placement="top"><img src="img/link_2.png" alt="Entrada 1" height="25px"></a></div>
+                    <div class="entrada2" data-toggle="tooltip" title="Main Entrance" data-placement="bottom"><a href="entrada2.html"><img src="img/link_2.png" alt="Entrada 2" height="30px"></a></div>
                </div>
             </div>
       </div>
        
      <div id="scrl_guide"></div>
       <script>
+         $('[data-toggle="tooltip"]').tooltip();  
+          
          $("#btnScrl").click(function() {
              console.log("cenas: " + $("#scrl_guide").offset().top);
             $('html, body').animate({
