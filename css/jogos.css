@@ -129,7 +129,7 @@ body {
     transition: linear 1s;
 }
 
-#jogo_bar_1 .frente .clicado, #jogo_bar_6 .frente . clicado {
+#jogo_bar_1 .frente .clicado, #jogo_bar_6 .frente .clicado {
     background-image: url("/img/bar-01.png");
     background-size:contain;
 }

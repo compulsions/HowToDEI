@@ -87,62 +87,16 @@
         $("#apple").hide();
 
         
-        $("#jogo_bar_1").click(function() {
-            lista = lista + "1";
-            console.log(lista);
+        $('.peca_jogo_bar').click(function(e) {
+            console.log("carregou!");
+            var cobaia = $(e.target).closest('.peca_jogo_bar');
+            console.log(cobaia);
+            $('.clicado').removeClass('clicado');
+            $(cobaia).addClass('clicado');
             verificar();
-            $("#jogo_bar_1").addClass("clicado");
         });
         
-        $("#jogo_bar_2").click(function() {
-            lista = lista + "2";
-            console.log(lista);
-            verificar();
-            $("#jogo_bar_2").addClass("clicado");
-        });
-        
-        $("#jogo_bar_3").click(function() {
-            lista = lista + "3";
-            console.log(lista);
-            verificar();
-            $("#jogo_bar_3").addClass("clicado");
-        });
-        
-        $("#jogo_bar_4").click(function() {
-            lista = lista + "4";
-            console.log(lista);
-            verificar();
-            $("#jogo_bar_4").addClass("clicado");
-        });
-        
-        $("#jogo_bar_5").click(function() {
-            lista = lista + "5";
-            console.log(lista);
-            verificar();
-            $("#jogo_bar_5").addClass("clicado");
-        });
-        
-        $("#jogo_bar_6").click(function() {
-            lista = lista + "6";
-            console.log(lista);
-            verificar();
-            $("#jogo_bar_6").addClass("clicado");
-        });
-        
-        $("#jogo_bar_7").click(function() {
-            lista = lista + "7";
-            console.log(lista);
-            verificar();
-            $("#jogo_bar_7").addClass("clicado");
-        });
-        
-        $("#jogo_bar_8").click(function() {
-            lista = lista + "8";
-            console.log(lista);
-            verificar();
-            $("#jogo_bar_8").addClass("clicado");
-        });
-        
+       
         
         function verificar() {
             if (lista.length == 2){
@@ -177,12 +131,6 @@
             } else if (lista.length > 2) {
                 lista = "";
                 console.log("apagando");
-                
-                for (i = 0; i < 8; i++){
-                    seletor = "jogo_bar_" + i;
-                    $("#" + seletor).removeClass("clicado");
-                    //seletor = "";
-                }
             }
          };
         
