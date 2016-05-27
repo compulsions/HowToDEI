@@ -13,11 +13,11 @@ html, body{
 .description{
     font: 400 15px "Roboto";
     text-align: center;
-    padding-top: 30px;
+    padding-top: 10px;
 }
 
 #btn_scrl{
-    padding-top:80px;
+    padding-top: 50px;
     text-align: center;
     align-content: center;
 }
@@ -29,10 +29,36 @@ html, body{
     padding-bottom: 40px;
 }
 
+#vg_subtittle2{
+    font: 700 20px "Slabo 27px";
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 5px;
+}
+
+.labelsLocs{
+    display: inline-block;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.labelsLocs p{
+    font: 400 15px "Roboto";
+    text-align: center;
+}
+
+
+.labelimg{
+    margin: 0px 70px 0px 70px;
+}
+
 .mapa_guia {
     width: 100%;
     height: 300px;
-    background: hotpink;
+    background-size: 600px;
+    background-image: url(/img/DEI3D.png);
+    background-repeat: no-repeat;
+    background-position: center;
     text-align: center;
     margin-bottom:100px;
     z-index: -1;
@@ -41,14 +67,17 @@ html, body{
 
 .entrada1{
     position:relative;
-    top: 2%;
-    right: 45%;
+    float: right;
+    margin-top: 10.2%;
+    right: 83%;
     font-size: 18px;
 }
 
 .entrada2{
     position:relative;
-    top: 78%;
+    float: right;
+    margin-top: 25.7%;
+    right: 69%;
     font-size: 18px;
 }
 
