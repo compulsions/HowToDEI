@@ -107,7 +107,9 @@ html, body{
     z-index: -1;
 }
 
-
+.rdLab{
+    display: inline-block;
+}
 
 /** Pontos no mapa **/
 

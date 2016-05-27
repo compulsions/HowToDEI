@@ -11,6 +11,7 @@
 
 .ExpCategorias{
     float: right;
+    height: 100px;
 }
 
 .ExpCat{
@@ -37,31 +38,3 @@
     z-index: -1;
 }
 
-/** Pontos no mapa **/
-
-.ex1{
-    position:relative;
-    top: 30%;
-    font-size: 18px;
-}
-
-.ex2{
-    position:relative;
-    top: 78%;
-    right: 15%;
-    font-size: 18px;
-}
-
-.ex3{
-    position:relative;
-    top: 50%;
-    right: 20%;
-    font-size: 18px;
-}
-
-.ex4{
-    position:relative;
-    top: 69%;
-    right: 10%;
-    font-size: 18px;
-}
