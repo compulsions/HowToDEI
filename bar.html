@@ -24,7 +24,8 @@
        <h2 class="page_title"> Cafeteria </h2>
        
        <p class="texto_pagina">
-           This is where people come to grab a bite and hang out with each other. <br> Feel free to use the tables to work outside of meal times or to sit down and enjoy a baguette. 
+           This is where people come to grab a bite and hang out with each other. <br> Feel free to use the tables to work outside of meal times or to sit down and enjoy a baguette. <br>
+           Complete the game to have a sneak peak at the things you can buy here! 
        </p>
        
 		<!-- Código para a página do BAR (contém jogo) -->	
@@ -40,6 +41,36 @@
            <span id="jogo_bar_8" class="peca_jogo_bar"><div class="frente"></div><div class="costas"></div></span>
        </div>
        
+       <div class="menu_bar">
+           <p id="croissant">
+               <b> Pastries </b><br>
+               Plain Croissant - 0.60€ <br>
+               Croissant w/ Butter - 0.70€ <br>
+               Chocolat Croissant - 1€ <br>
+           </p>
+           
+           <p id="baguette">
+               <b> Meals </b><br>
+               Baguette - 1.70€ <br>
+               Soup - 0.60€ <br>
+           </p>
+           
+           <p id="drink">
+               <b> Drinks </b><br>
+               Orange Juice - 1€ <br>
+               Soda - 0.80€ <br>
+               Water 33cl - 0.35€ <br>
+               Water 50cL - 0.50€ 
+           </p>
+           
+           <p id="apple">
+               <b> Snacks </b><br>
+               Piece of Fruit - 0.30€ <br>
+               Chocolate - 0.80€ <br>
+               Coffee - 0.35€
+           </p>
+       </div>
+       
        <!-- Contém:
                 - Foto de fundo do bar
                 - Aparece e desaparece texto
@@ -50,54 +81,66 @@
         var lista = "";
         
         //$(".peca_jogo_bar").click(verificar);
+        $("#croissant").hide();
+        $("#baguette").hide();
+        $("#drink").hide();
+        $("#apple").hide();
 
         
         $("#jogo_bar_1").click(function() {
             lista = lista + "1";
             console.log(lista);
             verificar();
+            $("#jogo_bar_1").addClass("clicado");
         });
         
         $("#jogo_bar_2").click(function() {
             lista = lista + "2";
             console.log(lista);
             verificar();
+            $("#jogo_bar_2").addClass("clicado");
         });
         
         $("#jogo_bar_3").click(function() {
             lista = lista + "3";
             console.log(lista);
             verificar();
+            $("#jogo_bar_3").addClass("clicado");
         });
         
         $("#jogo_bar_4").click(function() {
             lista = lista + "4";
             console.log(lista);
             verificar();
+            $("#jogo_bar_4").addClass("clicado");
         });
         
         $("#jogo_bar_5").click(function() {
             lista = lista + "5";
             console.log(lista);
             verificar();
+            $("#jogo_bar_5").addClass("clicado");
         });
         
         $("#jogo_bar_6").click(function() {
             lista = lista + "6";
             console.log(lista);
             verificar();
+            $("#jogo_bar_6").addClass("clicado");
         });
         
         $("#jogo_bar_7").click(function() {
             lista = lista + "7";
             console.log(lista);
             verificar();
+            $("#jogo_bar_7").addClass("clicado");
         });
         
         $("#jogo_bar_8").click(function() {
             lista = lista + "8";
             console.log(lista);
             verificar();
+            $("#jogo_bar_8").addClass("clicado");
         });
         
         
@@ -106,32 +149,44 @@
                 if (lista == "16" || lista == "61"){
                     console.log("és bué fixe, fizeste um par"); 
                     $("#jogo_bar_1").addClass("apagado");
-                    $("#jogo_bar_6").addClass("apagado");    
+                    $("#jogo_bar_6").addClass("apagado"); 
+                    $("#croissant").show();
                 } 
                 
                 else if (lista == "28" || lista == "82"){
                     console.log("és bué fixe, fizeste um par"); 
                     $("#jogo_bar_2").addClass("apagado");
                     $("#jogo_bar_8").addClass("apagado");
+                    $("#baguette").show();
                 }
                 
                 else if (lista == "34" || lista == "43"){
                     console.log("és bué fixe, fizeste um par"); 
                     $("#jogo_bar_3").addClass("apagado");
                     $("#jogo_bar_4").addClass("apagado");
+                    $("#drink").show();
                 }
                 
                 else if (lista == "57" || lista == "75"){
                     console.log("és bué fixe, fizeste um par"); 
                     $("#jogo_bar_5").addClass("apagado");
                     $("#jogo_bar_7").addClass("apagado");
+                    $("#apple").show();
                 }
                 
             } else if (lista.length > 2) {
-                    lista = "";
-                    console.log("apagando");
+                lista = "";
+                console.log("apagando");
+                
+                for (i = 0; i < 8; i++){
+                    seletor = "jogo_bar_" + i;
+                    $("#" + seletor).removeClass("clicado");
+                    //seletor = "";
                 }
-         }; 
+            }
+         };
+        
+
     </script>
 
    </body>
