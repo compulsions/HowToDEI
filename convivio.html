@@ -78,6 +78,13 @@
                     actual = "um";
                     $("#convivio_animacao").addClass("um").removeClass("zero");
                 } else if (actual == "um"){
+                      audioElement.setAttribute('src', 'audio/audio3.mp3');
+                        $('#musica_titulo').html("Natasha Bedingfield - Pocketful of Sunshine");
+                    $("#convivio_animacao").addClass("dois").removeClass("um");
+                    actual = "dois";
+                    }
+                
+                else if (actual == "dois"){
                       audioElement.setAttribute('src', 'audio/audio.mp3');
                         $('#musica_titulo').html("Natasha Bedingfield - Unwritten");
                     $("#convivio_animacao").addClass("zero").removeClass("um");

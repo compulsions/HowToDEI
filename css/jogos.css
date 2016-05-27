@@ -148,6 +148,11 @@ body {
     animation-duration: 5s;
 }
 
+.dois {
+    animation-name: bailando1;
+    animation-duration: 5s;
+}
+
 #convivio_animacao {
     display: inline-block;
     height: 10vw;;
