@@ -51,52 +51,61 @@
     <script>
         var lista = "";
         
-        $(".peca_jogo_bar").click(verificar);
+        //$(".peca_jogo_bar").click(verificar);
 
         
         $("#jogo_bar_1").click(function() {
             lista = lista + "1";
             console.log(lista);
+            verificar();
         });
         
         $("#jogo_bar_2").click(function() {
             lista = lista + "2";
             console.log(lista);
+            verificar();
         });
         
         $("#jogo_bar_3").click(function() {
             lista = lista + "3";
             console.log(lista);
+            verificar();
         });
         
         $("#jogo_bar_4").click(function() {
             lista = lista + "4";
             console.log(lista);
+            verificar();
         });
         
         $("#jogo_bar_5").click(function() {
             lista = lista + "5";
             console.log(lista);
+            verificar();
         });
         
         $("#jogo_bar_6").click(function() {
             lista = lista + "6";
             console.log(lista);
+            verificar();
         });
         
         $("#jogo_bar_7").click(function() {
             lista = lista + "7";
             console.log(lista);
+            verificar();
         });
         
         $("#jogo_bar_8").click(function() {
             lista = lista + "8";
             console.log(lista);
+            verificar();
         });
         
         $("#jogo_bar_9").click(function() {
             lista = lista + "9";
             console.log(lista);
+            verificar();
         });
         
         function verificar() {
@@ -125,7 +134,7 @@
                     $("#jogo_bar_9").addClass("apagado");
                 }
                 
-            } else if (lista.length >= 3) {
+            } else if (lista.length > 2) {
                     lista = "";
                     console.log("apagando");
                 }
