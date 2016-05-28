@@ -33,9 +33,18 @@ body {
     background-position: center;
 }
 
+#bibliotecaFundo{
+    background-size: cover;
+    background-image: url(/img/Bibliotecafundo.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+
 .page_title {
     font: 700 46px "Slabo 27px";
     padding: 3%;
+    margin-top: 0px;
 }
 
 .texto_pagina {
@@ -121,4 +130,12 @@ body {
 
 .link_btn:visited {
     color: #000;
+}
+
+/** Página Biblioteca **/
+
+
+
+#biblioBtn{
+    margin-top: 100px;
 }
