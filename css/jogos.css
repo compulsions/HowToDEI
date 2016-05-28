@@ -129,24 +129,20 @@ body {
     transition: linear 1s;
 }
 
-#jogo_bar_1 .frente .clicado, #jogo_bar_6 .frente .clicado {
-    background-image: url("/img/bar-01.png");
-    background-size:contain;
+#jogo_bar_1.clicado .frente, #jogo_bar_6.clicado .frente{
+    display: none;
 }
 
-#jogo_bar_2 .frente .clicado, #jogo_bar_8 .frente .clicado {
-    background-image: url("/img/bar-02.png");
-    background-size:contain;
+#jogo_bar_2.clicado .frente, #jogo_bar_8.clicado .frente {
+    display: none;
 }
 
-#jogo_bar_3 .frente .clicado, #jogo_bar_4 .frente .clicado {
-    background-image: url("/img/bar-03.png");
-    background-size:contain;
+#jogo_bar_3.clicado .frente, #jogo_bar_4.clicado .frente{
+    display: none;
 }
 
-#jogo_bar_5 .frente .clicado, #jogo_bar_7 .frente .clicado {
-    background-image: url("/img/bar-04.png");
-    background-size:contain;
+#jogo_bar_5.clicado .frente, #jogo_bar_7.clicado .frente {
+    display: none;
 }
 
 /* JOGO CONVIVIO */

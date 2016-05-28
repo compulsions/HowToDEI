@@ -84,7 +84,14 @@ html, body{
 .ecraGuia{
     height: 100%;
 }
+/*
+.pontos {
+    display: none;
+}
 
+.pontos .pontos_visivel {
+    display: block;
+}  */
 
 /** Página dos icons com as Categorias **/
 
