@@ -13,8 +13,6 @@ $(function() {
         $("#floor1").click( function(){
             $('.pontos_visivel').removeClass('pontos_visivel');
             $('#locaisImportantes_pontosP1').addClass('pontos_visivel');
-             cobaia = $('.pontos_visivel');
-             console.log(cobaia);
        });
         
        $("#floor4").click( function(){
