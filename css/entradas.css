@@ -1,0 +1,20 @@
+body{
+    background-color: white;
+}
+
+.entrances{
+    height: 100%;
+}
+
+.page_title_entrance {
+    font: 700 40px "Slabo 27px";
+    text-align: center;
+    padding: 70px 0 20px 0;
+}
+
+.subbtitle_entrance{
+    font: 700 20px "Slabo 27px";
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
