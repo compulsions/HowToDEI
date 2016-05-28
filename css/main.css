@@ -5,6 +5,27 @@ body {
     text-align: center;
 }
 
+#barFundo{
+    background-size: cover;
+    background-image: url(/img/Bar.JPG);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#neiFundo{
+    background-size: cover;
+    background-image: url(/img/Nei.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#convivioFundo{
+    background-size: cover;
+    background-image: url(/img/SalaConvivio.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .page_title {
     font: 700 46px "Slabo 27px";
     padding: 3%;
