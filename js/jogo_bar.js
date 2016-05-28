@@ -1,6 +1,6 @@
 //JOGO BAR
 var lista = "";
-var num;
+var num, ativo;
         
         //$(".peca_jogo_bar").click(verificar);
         $("#croissant").hide();
@@ -10,7 +10,6 @@ var num;
 
         
         $('.peca_jogo_bar').click(function(e) {
-            console.log("carregou!");
             var cobaia = $(e.target).closest('.peca_jogo_bar');
             num = cobaia.attr("id");
             lista = lista + num;

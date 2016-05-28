@@ -129,18 +129,8 @@ body {
     transition: linear 1s;
 }
 
-#jogo_bar_1.clicado .frente, #jogo_bar_6.clicado .frente{
-    display: none;
-}
-
-#jogo_bar_2.clicado .frente, #jogo_bar_8.clicado .frente {
-    display: none;
-}
-
-#jogo_bar_3.clicado .frente, #jogo_bar_4.clicado .frente{
-    display: none;
-}
-
+#jogo_bar_1.clicado .frente, #jogo_bar_6.clicado .frente, #jogo_bar_2.clicado .frente, #jogo_bar_8.clicado .frente,
+#jogo_bar_3.clicado .frente, #jogo_bar_4.clicado .frente,
 #jogo_bar_5.clicado .frente, #jogo_bar_7.clicado .frente {
     display: none;
 }
