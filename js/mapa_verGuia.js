@@ -225,3 +225,4 @@ $(function() {
             $('#wcs_pontosP5').addClass('pontos_visivel');
           });
     });
+});
