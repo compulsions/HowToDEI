@@ -1,3 +1,5 @@
+// Index
+
 $(function() {
     $(".texto_visita").hide();
 
@@ -10,5 +12,3 @@ $(function() {
         setTimeout(function(){ window.location = "guia.html"; }, 5000);
     });
 });
-
-
