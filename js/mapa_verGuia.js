@@ -2,76 +2,33 @@ $(function() {
     $('[data-toggle="tooltip"]').tooltip();  
 
 //Começar com as Localizações escondidas
-                    document.getElementById("locaisImportantes_pontosP1").style.display = "none";
-document.getElementById("locaisImportantes_pontosP4").style.display = "none";
-document.getElementById("locaisImportantes_pontosP6").style.display = "none";
-    
-    document.getElementById("locaisEstudo_pontosP4").style.display = "none";
- document.getElementById("locaisEstudo_pontosP5").style.display = "none";
-    document.getElementById("locaisConvivio_pontos").style.display = "none";
-    
-    document.getElementById("wcs_pontosP4").style.display = "none";
-    document.getElementById("wcs_pontosP5").style.display = "none";
+    $('.pontos').removeClass('pontos_visivel');
     
     ///////////////////////////////////////////////////////////
     
 //Alterar localizações conforme categoria
     $("#InfoImportantes").click( function(){
-        
-        document.getElementById("locaisImportantes_pontosP1").style.display = "none";
-document.getElementById("locaisImportantes_pontosP4").style.display = "none";
-document.getElementById("locaisImportantes_pontosP6").style.display = "none";
-    
-    document.getElementById("locaisEstudo_pontosP4").style.display = "none";
- document.getElementById("locaisEstudo_pontosP5").style.display = "none";
-    document.getElementById("locaisConvivio_pontos").style.display = "none";
-    
-    document.getElementById("wcs_pontosP4").style.display = "none";
-    document.getElementById("wcs_pontosP5").style.display = "none";
+        $('.pontos_visivel').removeClass('pontos_visivel');
         
          $("#floor1").click( function(){
-             document.getElementById("locaisImportantes_pontosP1").style.display = "block";
-document.getElementById("locaisImportantes_pontosP4").style.display = "none";
-document.getElementById("locaisImportantes_pontosP6").style.display = "none";
-             document.getElementById("locaisEstudo_pontosP4").style.display = "none";
- document.getElementById("locaisEstudo_pontosP5").style.display = "none";
-    document.getElementById("locaisConvivio_pontos").style.display = "none";
-    
-    document.getElementById("wcs_pontosP4").style.display = "none";
-    document.getElementById("wcs_pontosP5").style.display = "none";
+            $('.pontos_visivel').removeClass('pontos_visivel');
+            $('#locaisImportantes_pontosP1').addClass('pontos_visivel');
+             cobaia = $('.pontos_visivel');
+             console.log(cobaia);
        });
         
-       $("#floor4").click( function(){ document.getElementById("locaisImportantes_pontosP1").style.display = "none";
-document.getElementById("locaisImportantes_pontosP4").style.display = "block";
-document.getElementById("locaisImportantes_pontosP6").style.display = "none";
-                                      document.getElementById("locaisEstudo_pontosP4").style.display = "none";
- document.getElementById("locaisEstudo_pontosP5").style.display = "none";
-    document.getElementById("locaisConvivio_pontos").style.display = "none";
-    
-    document.getElementById("wcs_pontosP4").style.display = "none";
-    document.getElementById("wcs_pontosP5").style.display = "none";
+       $("#floor4").click( function(){
+           $('.pontos_visivel').removeClass('pontos_visivel');
+            $('#locaisImportantes_pontosP4').addClass('pontos_visivel');
     });
         
-       $("#floor5").click( function(){ document.getElementById("locaisImportantes_pontosP1").style.display = "none";
-document.getElementById("locaisImportantes_pontosP4").style.display = "none";
-document.getElementById("locaisImportantes_pontosP6").style.display = "none";
-                                      document.getElementById("locaisEstudo_pontosP4").style.display = "none";
- document.getElementById("locaisEstudo_pontosP5").style.display = "none";
-    document.getElementById("locaisConvivio_pontos").style.display = "none";
-    
-    document.getElementById("wcs_pontosP4").style.display = "none";
-    document.getElementById("wcs_pontosP5").style.display = "none";
+       $("#floor5").click( function(){
+           $('.pontos_visivel').removeClass('pontos_visivel');
     });
         
-        $("#floor6").click( function(){ document.getElementById("locaisImportantes_pontosP1").style.display = "none";
-document.getElementById("locaisImportantes_pontosP4").style.display = "none";
-document.getElementById("locaisImportantes_pontosP6").style.display = "block";
-                                       document.getElementById("locaisEstudo_pontosP4").style.display = "none";
- document.getElementById("locaisEstudo_pontosP5").style.display = "none";
-    document.getElementById("locaisConvivio_pontos").style.display = "none";
-    
-    document.getElementById("wcs_pontosP4").style.display = "none";
-    document.getElementById("wcs_pontosP5").style.display = "none";
+        $("#floor6").click( function(){ 
+            $('.pontos_visivel').removeClass('pontos_visivel');
+            $('#locaisImportantes_pontosP6').addClass('pontos_visivel');
     });
        
 //Mudar o estilo dos botoes        
@@ -88,64 +45,27 @@ document.getElementById("locaisImportantes_pontosP6").style.display = "block";
     
 //Alterar localizações conforme categoria
     $("#LocaisEstudo").click( function(){
+        $('.pontos_visivel').removeClass('pontos_visivel');
         
-        document.getElementById("locaisImportantes_pontosP1").style.display = "none";
-document.getElementById("locaisImportantes_pontosP4").style.display = "none";
-document.getElementById("locaisImportantes_pontosP6").style.display = "none";
-    
-    document.getElementById("locaisEstudo_pontosP4").style.display = "none";
- document.getElementById("locaisEstudo_pontosP5").style.display = "none";
-    document.getElementById("locaisConvivio_pontos").style.display = "none";
-    
-    document.getElementById("wcs_pontosP4").style.display = "none";
-    document.getElementById("wcs_pontosP5").style.display = "none";
+        
         
        $("#floor1").click( function(){
-           document.getElementById("locaisEstudo_pontosP4").style.display = "none";
- document.getElementById("locaisEstudo_pontosP5").style.display = "none";
-           document.getElementById("locaisImportantes_pontosP1").style.display = "none";
-document.getElementById("locaisImportantes_pontosP4").style.display = "none";
-document.getElementById("locaisImportantes_pontosP6").style.display = "none";
-    document.getElementById("locaisConvivio_pontos").style.display = "none";
-    
-    document.getElementById("wcs_pontosP4").style.display = "none";
-    document.getElementById("wcs_pontosP5").style.display = "none";
-    });
+            $('.pontos_visivel').removeClass('pontos_visivel');
+
         
        $("#floor4").click( function(){
-           document.getElementById("locaisEstudo_pontosP4").style.display = "block";
- document.getElementById("locaisEstudo_pontosP5").style.display = "none";
-           document.getElementById("locaisImportantes_pontosP1").style.display = "none";
-document.getElementById("locaisImportantes_pontosP4").style.display = "none";
-document.getElementById("locaisImportantes_pontosP6").style.display = "none";
-    document.getElementById("locaisConvivio_pontos").style.display = "none";
-    
-    document.getElementById("wcs_pontosP4").style.display = "none";
-    document.getElementById("wcs_pontosP5").style.display = "none";
+           $('.pontos_visivel').removeClass('pontos_visivel');
+           $('#locaisEstudo_PontosP4').addClass('pontos_visivel');
     });
         
        $("#floor5").click( function(){ 
-           document.getElementById("locaisEstudo_pontosP4").style.display = "none";
- document.getElementById("locaisEstudo_pontosP5").style.display = "block";
-           document.getElementById("locaisImportantes_pontosP1").style.display = "none";
-document.getElementById("locaisImportantes_pontosP4").style.display = "none";
-document.getElementById("locaisImportantes_pontosP6").style.display = "none";
-    document.getElementById("locaisConvivio_pontos").style.display = "none";
-    
-    document.getElementById("wcs_pontosP4").style.display = "none";
-    document.getElementById("wcs_pontosP5").style.display = "none";
+           $('.pontos_visivel').removeClass('pontos_visivel');
+           $('#locaisEstudo_PontosP5').addClass('pontos_visivel');
+ 
     });
         
         $("#floor6").click( function(){ 
-            document.getElementById("locaisEstudo_pontosP4").style.display = "none";
- document.getElementById("locaisEstudo_pontosP5").style.display = "none";
-            document.getElementById("locaisImportantes_pontosP1").style.display = "none";
-document.getElementById("locaisImportantes_pontosP4").style.display = "none";
-document.getElementById("locaisImportantes_pontosP6").style.display = "none";
-    document.getElementById("locaisConvivio_pontos").style.display = "none";
-    
-    document.getElementById("wcs_pontosP4").style.display = "none";
-    document.getElementById("wcs_pontosP5").style.display = "none";
+            $('.pontos_visivel').removeClass('pontos_visivel');
     });
 
     //Mudar o estilo dos botoes        
@@ -161,69 +81,25 @@ document.getElementById("locaisImportantes_pontosP6").style.display = "none";
     
 //Alterar localizações conforme categoria
     $("#LocaisConvivio").click( function(){
-     
-        document.getElementById("locaisImportantes_pontosP1").style.display = "none";
-document.getElementById("locaisImportantes_pontosP4").style.display = "none";
-document.getElementById("locaisImportantes_pontosP6").style.display = "none";
-    
-    document.getElementById("locaisEstudo_pontosP4").style.display = "none";
- document.getElementById("locaisEstudo_pontosP5").style.display = "none";
-    document.getElementById("locaisConvivio_pontos").style.display = "none";
-    
-    document.getElementById("wcs_pontosP4").style.display = "none";
-    document.getElementById("wcs_pontosP5").style.display = "none";
-        
+         $('.pontos_visivel').removeClass('pontos_visivel');
+    });
         
        $("#floor1").click( function(){
-           document.getElementById("locaisConvivio_pontos").style.display = "none";
-           document.getElementById("locaisImportantes_pontosP1").style.display = "none";
-document.getElementById("locaisImportantes_pontosP4").style.display = "none";
-document.getElementById("locaisImportantes_pontosP6").style.display = "none";
-    
-    document.getElementById("locaisEstudo_pontosP4").style.display = "none";
- document.getElementById("locaisEstudo_pontosP5").style.display = "none";
-    
-    document.getElementById("wcs_pontosP4").style.display = "none";
-    document.getElementById("wcs_pontosP5").style.display = "none";
+           $('.pontos_visivel').removeClass('pontos_visivel');
     });
         
        $("#floor4").click( function(){
-           document.getElementById("locaisConvivio_pontos").style.display = "block";
-           document.getElementById("locaisImportantes_pontosP1").style.display = "none";
-document.getElementById("locaisImportantes_pontosP4").style.display = "none";
-document.getElementById("locaisImportantes_pontosP6").style.display = "none";
-    
-    document.getElementById("locaisEstudo_pontosP4").style.display = "none";
- document.getElementById("locaisEstudo_pontosP5").style.display = "none";
-    
-    document.getElementById("wcs_pontosP4").style.display = "none";
-    document.getElementById("wcs_pontosP5").style.display = "none";
+           $('.pontos_visivel').removeClass('pontos_visivel');
+           $('#locaisConvivio_pontos').addClass('pontos_visivel');
+
     });
         
        $("#floor5").click( function(){ 
-           document.getElementById("locaisConvivio_pontos").style.display = "none";
-           document.getElementById("locaisImportantes_pontosP1").style.display = "none";
-document.getElementById("locaisImportantes_pontosP4").style.display = "none";
-document.getElementById("locaisImportantes_pontosP6").style.display = "none";
-    
-    document.getElementById("locaisEstudo_pontosP4").style.display = "none";
- document.getElementById("locaisEstudo_pontosP5").style.display = "none";
-    
-    document.getElementById("wcs_pontosP4").style.display = "none";
-    document.getElementById("wcs_pontosP5").style.display = "none";
+            $('.pontos_visivel').removeClass('pontos_visivel');
     });
         
         $("#floor6").click( function(){ 
-            document.getElementById("locaisConvivio_pontos").style.display = "none";
-            document.getElementById("locaisImportantes_pontosP1").style.display = "none";
-document.getElementById("locaisImportantes_pontosP4").style.display = "none";
-document.getElementById("locaisImportantes_pontosP6").style.display = "none";
-    
-    document.getElementById("locaisEstudo_pontosP4").style.display = "none";
- document.getElementById("locaisEstudo_pontosP5").style.display = "none";
-    
-    document.getElementById("wcs_pontosP4").style.display = "none";
-    document.getElementById("wcs_pontosP5").style.display = "none";
+            $('.pontos_visivel').removeClass('pontos_visivel');
     });
     
     //Mudar o estilo dos botoes        
@@ -240,64 +116,25 @@ document.getElementById("locaisImportantes_pontosP6").style.display = "none";
     
 //Alterar localizações conforme categoria
     $("#InfoWC").click( function(){   
-        
-        document.getElementById("locaisImportantes_pontosP1").style.display = "none";
-document.getElementById("locaisImportantes_pontosP4").style.display = "none";
-document.getElementById("locaisImportantes_pontosP6").style.display = "none";
-    
-    document.getElementById("locaisEstudo_pontosP4").style.display = "none";
- document.getElementById("locaisEstudo_pontosP5").style.display = "none";
-    document.getElementById("locaisConvivio_pontos").style.display = "none";
-    
-    document.getElementById("wcs_pontosP4").style.display = "none";
-    document.getElementById("wcs_pontosP5").style.display = "none";
+        $('.pontos_visivel').removeClass('pontos_visivel');
         
        $("#floor1").click( function(){
-           document.getElementById("wcs_pontosP4").style.display = "none";
-           document.getElementById("wcs_pontosP5").style.display = "none";
-           document.getElementById("locaisImportantes_pontosP1").style.display = "none";
-document.getElementById("locaisImportantes_pontosP4").style.display = "none";
-document.getElementById("locaisImportantes_pontosP6").style.display = "none";
-
-        document.getElementById("locaisEstudo_pontosP4").style.display = "none";
- document.getElementById("locaisEstudo_pontosP5").style.display = "none";
-        document.getElementById("locaisConvivio_pontos").style.display = "none";
+           $('.pontos_visivel').removeClass('pontos_visivel');
     });
         
        $("#floor4").click( function(){
-           document.getElementById("wcs_pontosP4").style.display = "block";
-           document.getElementById("wcs_pontosP5").style.display = "none";  
-           document.getElementById("locaisImportantes_pontosP1").style.display = "none";
-document.getElementById("locaisImportantes_pontosP4").style.display = "none";
-document.getElementById("locaisImportantes_pontosP6").style.display = "none";
-
-        document.getElementById("locaisEstudo_pontosP4").style.display = "none";
- document.getElementById("locaisEstudo_pontosP5").style.display = "none";
-        document.getElementById("locaisConvivio_pontos").style.display = "none";
+           $('.pontos_visivel').removeClass('pontos_visivel');
+           $('#wcs_pontosP4').addClass('pontos_visivel');
     });
         
        $("#floor5").click( function(){ 
-            document.getElementById("wcs_pontosP4").style.display = "none";
-            document.getElementById("wcs_pontosP5").style.display = "block";
-           document.getElementById("locaisImportantes_pontosP1").style.display = "none";
-document.getElementById("locaisImportantes_pontosP4").style.display = "none";
-document.getElementById("locaisImportantes_pontosP6").style.display = "none";
-
-        document.getElementById("locaisEstudo_pontosP4").style.display = "none";
- document.getElementById("locaisEstudo_pontosP5").style.display = "none";
-        document.getElementById("locaisConvivio_pontos").style.display = "none";
+            $('.pontos_visivel').removeClass('pontos_visivel');
+           $('#wcs_pontosP5').addClass('pontos_visivel');
     });
         
         $("#floor6").click( function(){ 
-            document.getElementById("wcs_pontosP4").style.display = "none";
-            document.getElementById("wcs_pontosP5").style.display = "block";
-            document.getElementById("locaisImportantes_pontosP1").style.display = "none";
-document.getElementById("locaisImportantes_pontosP4").style.display = "none";
-document.getElementById("locaisImportantes_pontosP6").style.display = "none";
-
-        document.getElementById("locaisEstudo_pontosP4").style.display = "none";
- document.getElementById("locaisEstudo_pontosP5").style.display = "none";
-        document.getElementById("locaisConvivio_pontos").style.display = "none";
+            $('.pontos_visivel').removeClass('pontos_visivel');
+           $('#wcs_pontosP5').addClass('pontos_visivel');
     });
         
    //Mudar o estilo dos botoes        
@@ -318,52 +155,21 @@ document.getElementById("locaisImportantes_pontosP6").style.display = "none";
         $('.mapa_guiacategorias').css("background-image", "url(/img/m1.png)");
         
         $("#InfoImportantes").click( function(){
-            document.getElementById("locaisImportantes_pontosP1").style.display = "block";
-document.getElementById("locaisImportantes_pontosP4").style.display = "none";
-document.getElementById("locaisImportantes_pontosP6").style.display = "none";
-             document.getElementById("locaisEstudo_pontosP4").style.display = "none";
- document.getElementById("locaisEstudo_pontosP5").style.display = "none";
-    document.getElementById("locaisConvivio_pontos").style.display = "none";
-    
-    document.getElementById("wcs_pontosP4").style.display = "none";
-    document.getElementById("wcs_pontosP5").style.display = "none";
+            $('.pontos_visivel').removeClass('pontos_visivel');
+            $('#locaisImportantes_pontosP1').addClass('pontos_visivel');
+
           });
         
         
         $("#LocaisEstudo").click( function(){
-            
-            document.getElementById("locaisEstudo_pontosP4").style.display = "none";
- document.getElementById("locaisEstudo_pontosP5").style.display = "none";
-           document.getElementById("locaisImportantes_pontosP1").style.display = "none";
-document.getElementById("locaisImportantes_pontosP4").style.display = "none";
-document.getElementById("locaisImportantes_pontosP6").style.display = "none";
-    document.getElementById("locaisConvivio_pontos").style.display = "none";
-    
-    document.getElementById("wcs_pontosP4").style.display = "none";
-    document.getElementById("wcs_pontosP5").style.display = "none";
+            $('.pontos_visivel').removeClass('pontos_visivel');
           });
         
         $("#LocaisConvivio").click( function(){
-            document.getElementById("locaisImportantes_pontosP1").style.display = "none";
-document.getElementById("locaisImportantes_pontosP4").style.display = "none";
-document.getElementById("locaisImportantes_pontosP6").style.display = "none";
-                                      document.getElementById("locaisEstudo_pontosP4").style.display = "none";
- document.getElementById("locaisEstudo_pontosP5").style.display = "none";
-    document.getElementById("locaisConvivio_pontos").style.display = "none";
-    
-    document.getElementById("wcs_pontosP4").style.display = "none";
-    document.getElementById("wcs_pontosP5").style.display = "none";
+            $('.pontos_visivel').removeClass('pontos_visivel');
           });
         $("#InfoWC").click( function(){
-            document.getElementById("locaisImportantes_pontosP1").style.display = "none";
-document.getElementById("locaisImportantes_pontosP4").style.display = "none";
-document.getElementById("locaisImportantes_pontosP6").style.display = "none";
-                                      document.getElementById("locaisEstudo_pontosP4").style.display = "none";
- document.getElementById("locaisEstudo_pontosP5").style.display = "none";
-    document.getElementById("locaisConvivio_pontos").style.display = "none";
-    
-    document.getElementById("wcs_pontosP4").style.display = "none";
-    document.getElementById("wcs_pontosP5").style.display = "none";
+            $('.pontos_visivel').removeClass('pontos_visivel');
           });
     });
     
@@ -371,48 +177,21 @@ document.getElementById("locaisImportantes_pontosP6").style.display = "none";
          $('.mapa_guiacategorias').css("background-image", "url(/img/m2.png)");
         
         $("#InfoImportantes").click( function(){
-            document.getElementById("locaisImportantes_pontosP1").style.display = "none";
-document.getElementById("locaisImportantes_pontosP4").style.display = "block";
-document.getElementById("locaisImportantes_pontosP6").style.display = "none";
-                                      document.getElementById("locaisEstudo_pontosP4").style.display = "none";
- document.getElementById("locaisEstudo_pontosP5").style.display = "none";
-    document.getElementById("locaisConvivio_pontos").style.display = "none";
-    
-    document.getElementById("wcs_pontosP4").style.display = "none";
-    document.getElementById("wcs_pontosP5").style.display = "none";
+            $('.pontos_visivel').removeClass('pontos_visivel');
+            $('#locaisImportantes_pontosP4').addClass('pontos_visivel');
           });
         $("#LocaisEstudo").click( function(){
-            document.getElementById("locaisImportantes_pontosP1").style.display = "none";
-document.getElementById("locaisImportantes_pontosP4").style.display = "none";
-document.getElementById("locaisImportantes_pontosP6").style.display = "none";
-                                      document.getElementById("locaisEstudo_pontosP4").style.display = "block";
- document.getElementById("locaisEstudo_pontosP5").style.display = "none";
-    document.getElementById("locaisConvivio_pontos").style.display = "none";
-    
-    document.getElementById("wcs_pontosP4").style.display = "none";
-    document.getElementById("wcs_pontosP5").style.display = "none";
+            $('.pontos_visivel').removeClass('pontos_visivel');
+            $('#locaisEstudo_pontosP4').addClass('pontos_visivel');
           });
+        
         $("#LocaisConvivio").click( function(){
-            document.getElementById("locaisImportantes_pontosP1").style.display = "none";
-document.getElementById("locaisImportantes_pontosP4").style.display = "none";
-document.getElementById("locaisImportantes_pontosP6").style.display = "none";
-                                      document.getElementById("locaisEstudo_pontosP4").style.display = "none";
- document.getElementById("locaisEstudo_pontosP5").style.display = "none";
-    document.getElementById("locaisConvivio_pontos").style.display = "block";
-    
-    document.getElementById("wcs_pontosP4").style.display = "none";
-    document.getElementById("wcs_pontosP5").style.display = "none";
+            $('.pontos_visivel').removeClass('pontos_visivel');
+            $('#locaisConvivio_pontos').addClass('pontos_visivel');
           });
         $("#InfoWC").click( function(){
-            document.getElementById("locaisImportantes_pontosP1").style.display = "none";
-document.getElementById("locaisImportantes_pontosP4").style.display = "none";
-document.getElementById("locaisImportantes_pontosP6").style.display = "none";
-                                      document.getElementById("locaisEstudo_pontosP4").style.display = "none";
- document.getElementById("locaisEstudo_pontosP5").style.display = "none";
-    document.getElementById("locaisConvivio_pontos").style.display = "none";
-    
-    document.getElementById("wcs_pontosP4").style.display = "block";
-    document.getElementById("wcs_pontosP5").style.display = "none";
+            $('.pontos_visivel').removeClass('pontos_visivel');
+            $('#wcs_pontosP4').addClass('pontos_visivel');
           });
     });
     
@@ -420,48 +199,20 @@ document.getElementById("locaisImportantes_pontosP6").style.display = "none";
         $('.mapa_guiacategorias').css("background-image", "url(/img/m3.png)");
         
         $("#InfoImportantes").click( function(){
-            document.getElementById("locaisImportantes_pontosP1").style.display = "none";
-document.getElementById("locaisImportantes_pontosP4").style.display = "none";
-document.getElementById("locaisImportantes_pontosP6").style.display = "none";
-                                      document.getElementById("locaisEstudo_pontosP4").style.display = "none";
- document.getElementById("locaisEstudo_pontosP5").style.display = "none";
-    document.getElementById("locaisConvivio_pontos").style.display = "none";
-    
-    document.getElementById("wcs_pontosP4").style.display = "none";
-    document.getElementById("wcs_pontosP5").style.display = "none";
+            $('.pontos_visivel').removeClass('pontos_visivel');
           });
         $("#LocaisEstudo").click( function(){
-            document.getElementById("locaisImportantes_pontosP1").style.display = "none";
-document.getElementById("locaisImportantes_pontosP4").style.display = "none";
-document.getElementById("locaisImportantes_pontosP6").style.display = "none";
-                                      document.getElementById("locaisEstudo_pontosP4").style.display = "none";
- document.getElementById("locaisEstudo_pontosP5").style.display = "block";
-    document.getElementById("locaisConvivio_pontos").style.display = "none";
-    
-    document.getElementById("wcs_pontosP4").style.display = "none";
-    document.getElementById("wcs_pontosP5").style.display = "none";
+            $('.pontos_visivel').removeClass('pontos_visivel');
+            $('#locaisEstudo_pontosP5').addClass('pontos_visivel');
           });
+        
         $("#LocaisConvivio").click( function(){
-            document.getElementById("locaisImportantes_pontosP1").style.display = "none";
-document.getElementById("locaisImportantes_pontosP4").style.display = "none";
-document.getElementById("locaisImportantes_pontosP6").style.display = "none";
-                                      document.getElementById("locaisEstudo_pontosP4").style.display = "none";
- document.getElementById("locaisEstudo_pontosP5").style.display = "none";
-    document.getElementById("locaisConvivio_pontos").style.display = "none";
-    
-    document.getElementById("wcs_pontosP4").style.display = "none";
-    document.getElementById("wcs_pontosP5").style.display = "none";
+            $('.pontos_visivel').removeClass('pontos_visivel');
           });
+        
         $("#InfoWC").click( function(){
-            document.getElementById("locaisImportantes_pontosP1").style.display = "none";
-document.getElementById("locaisImportantes_pontosP4").style.display = "none";
-document.getElementById("locaisImportantes_pontosP6").style.display = "none";
-                                      document.getElementById("locaisEstudo_pontosP4").style.display = "none";
- document.getElementById("locaisEstudo_pontosP5").style.display = "none";
-    document.getElementById("locaisConvivio_pontos").style.display = "none";
-    
-    document.getElementById("wcs_pontosP4").style.display = "none";
-    document.getElementById("wcs_pontosP5").style.display = "block";
+            $('.pontos_visivel').removeClass('pontos_visivel');
+            $('#wcs_pontosP5').addClass('pontos_visivel');
           });
     });
     
@@ -469,48 +220,21 @@ document.getElementById("locaisImportantes_pontosP6").style.display = "none";
         $('.mapa_guiacategorias').css("background-image", "url(/img/m3.png)");
         
         $("#InfoImportantes").click( function(){
-            document.getElementById("locaisImportantes_pontosP1").style.display = "none";
-document.getElementById("locaisImportantes_pontosP4").style.display = "none";
-document.getElementById("locaisImportantes_pontosP6").style.display = "block";
-                                       document.getElementById("locaisEstudo_pontosP4").style.display = "none";
- document.getElementById("locaisEstudo_pontosP5").style.display = "none";
-    document.getElementById("locaisConvivio_pontos").style.display = "none";
-    
-    document.getElementById("wcs_pontosP4").style.display = "none";
-    document.getElementById("wcs_pontosP5").style.display = "none";
+            $('.pontos_visivel').removeClass('pontos_visivel');
+            $('#locaisImportantes_pontosP6').addClass('pontos_visivel');
           });
+        
         $("#LocaisEstudo").click( function(){
-            document.getElementById("locaisImportantes_pontosP1").style.display = "none";
-document.getElementById("locaisImportantes_pontosP4").style.display = "none";
-document.getElementById("locaisImportantes_pontosP6").style.display = "none";
-                                      document.getElementById("locaisEstudo_pontosP4").style.display = "none";
- document.getElementById("locaisEstudo_pontosP5").style.display = "none";
-    document.getElementById("locaisConvivio_pontos").style.display = "none";
-    
-    document.getElementById("wcs_pontosP4").style.display = "none";
-    document.getElementById("wcs_pontosP5").style.display = "none";
+            $('.pontos_visivel').removeClass('pontos_visivel');
           });
+        
         $("#LocaisConvivio").click( function(){
-            document.getElementById("locaisImportantes_pontosP1").style.display = "none";
-document.getElementById("locaisImportantes_pontosP4").style.display = "none";
-document.getElementById("locaisImportantes_pontosP6").style.display = "none";
-                                      document.getElementById("locaisEstudo_pontosP4").style.display = "none";
- document.getElementById("locaisEstudo_pontosP5").style.display = "none";
-    document.getElementById("locaisConvivio_pontos").style.display = "none";
-    
-    document.getElementById("wcs_pontosP4").style.display = "none";
-    document.getElementById("wcs_pontosP5").style.display = "none";
+            $('.pontos_visivel').removeClass('pontos_visivel');
           });
+        
         $("#InfoWC").click( function(){
-            document.getElementById("locaisImportantes_pontosP1").style.display = "none";
-document.getElementById("locaisImportantes_pontosP4").style.display = "none";
-document.getElementById("locaisImportantes_pontosP6").style.display = "none";
-                                      document.getElementById("locaisEstudo_pontosP4").style.display = "none";
- document.getElementById("locaisEstudo_pontosP5").style.display = "none";
-    document.getElementById("locaisConvivio_pontos").style.display = "none";
-    
-    document.getElementById("wcs_pontosP4").style.display = "none";
-    document.getElementById("wcs_pontosP5").style.display = "block";
+            $('.pontos_visivel').removeClass('pontos_visivel');
+            $('#wcs_pontosP5').addClass('pontos_visivel');
           });
     });
 });
