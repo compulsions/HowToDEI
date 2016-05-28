@@ -26,6 +26,13 @@ body {
     background-position: center;
 }
 
+#indexfundo{
+    background-size: cover;
+    background-image: url(/img/DEIfundo.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .page_title {
     font: 700 46px "Slabo 27px";
     padding: 3%;
