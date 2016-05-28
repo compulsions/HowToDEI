@@ -28,7 +28,7 @@
     $('#pause').click(function() {
         audioElement.pause();
         $('#musica_titulo').hide();
-        $("#convivio_animacao").removeClass("zero um");
+        $("#convivio_animacao").removeClass("zero um dois");
     });
             
      //Botão Avançar

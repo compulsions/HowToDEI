@@ -145,10 +145,11 @@ body {
     width: 8vw;
     height: 8vw;
     min-height: 50px;
+    min-width: 50px;
     background: deepskyblue;
-    margin: 1% 0 2% 0;
+    margin: 2% 0;
     padding: 4%;
-    font: 300 20px "Slabo 27px";
+    font: 300 18px "Slabo 27px";
     border-radius: 100%;
 }
 
@@ -170,6 +171,11 @@ body {
 .dois {
     animation-name: bailando2;
     animation-duration: 5s;
+}
+
+#convivio_dancefloor {
+    width: 80vw;
+    height: 40vh;
 }
 
 #convivio_animacao {
@@ -203,7 +209,7 @@ body {
     
     100% {
         background: deepskyblue;
-        margin-top: 10%;
+        margin-top: 30%;
     }
 
 }
@@ -240,24 +246,22 @@ body {
 
 @keyframes bailando2 {
     0% {
-        margin-left: -50%;
-        transform: scale(0.5);
+        transform: scale(1.5);
         background: deepskyblue;
     }
     
     30% {
-        transform: scale(1);
-        background: pink;    
+        transform: scale(0.3);
+        background: limegreen;    
     }
     
     70% {
-        transform: scale(0.8);
-        background: purple;    
+        transform: scale(1.2);
+        background: orange;    
     }
 
     100% {
         background: yellow;
-        margin-left: 50%;
         transform: scale(0.5);
     }
 
