@@ -29,6 +29,8 @@ body {
 }
 
 #jogo_nei_objectivo1 {
+    background-image: url("/img/nei-fundo-03.png");
+    background-size:contain;
     top: 40%;
     right: 70%;
 }
@@ -40,6 +42,8 @@ body {
 }
 
 #jogo_nei_objectivo2 {
+    background-image: url("/img/nei-fundo-04.png");
+    background-size:contain;
     top: 80%;
     right: 80%;
 }
@@ -66,7 +70,6 @@ body {
 
 .objectivo {
     position: absolute;
-    background: white;
     z-index: 1;
 }
 
