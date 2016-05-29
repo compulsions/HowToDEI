@@ -1,5 +1,4 @@
 $(function() {
-    $("#alerta_1").hide();
     
     $( "#jogo_nei_peca1" ).draggable({
         containment: $('.jogo_nei'),
@@ -11,9 +10,19 @@ $(function() {
         containment: $('.jogo_nei'),
         revert: "invalid"
     });  
+    
+    $( "#jogo_nei_peca3" ).draggable({
+        containment: $('.jogo_nei'),
+        revert: "invalid"
+    });  
+    
+    $( "#jogo_nei_peca4" ).draggable({
+        containment: $('.jogo_nei'),
+        revert: "invalid"
+    });  
            
     $("#jogo_nei_objectivo1").droppable( {
-        drop: handleDropEvent1,
+        drop: handleDropEvent,
         accept: '#jogo_nei_peca1',
     });
               
@@ -21,10 +30,19 @@ $(function() {
         drop: handleDropEvent,
         accept: '#jogo_nei_peca2'
      });
+    
+    $("#jogo_nei_objectivo3").droppable( {
+        drop: handleDropEvent,
+        accept: '#jogo_nei_peca3'
+     });
+    
+    $("#jogo_nei_objectivo4").droppable( {
+        drop: handleDropEvent,
+        accept: '#jogo_nei_peca4'
+     });
 
-    function handleDropEvent1( event, ui ) {
+    function handleDropEvent( event, ui ) {
         $(this).addClass("goal");
-        $("#alerta_1").show();
     }
     
 });
