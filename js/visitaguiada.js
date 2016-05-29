@@ -20,6 +20,6 @@ $(function() {
         $(".texto_visita").show(800);
 
         //setTimeout("window.location.href = "guia.html"", 2000);
-        setTimeout(function(){ window.location = "guia.html"; }, 5000);
+        setTimeout(function(){ window.location = "expmapas.html"; }, 5000);
     });
 });
