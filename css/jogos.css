@@ -8,22 +8,23 @@ body {
 /* JOGO NEI */
 .jogo_nei {
     width: 100vw;
-    height: 60vh;
+    height: 55vh;
     background: deepskyblue;
     text-align: center;
-    margin: 5% 0;
+    margin: 3% 0;
 }
 
 
 .peca_jogo_nei {
     width: 10vh;
     height: 10vh;
-    padding: 2%;
-    font: 300 20px "Slabo 27px";
+    padding: 3% 1%;
+    font: 300 15px "Slabo 27px";
 }
 
 #jogo_nei_peca1 {
-    background: yellow;
+    background-image: url("/img/nei-01.png");
+    background-size:contain;
     z-index: 2;
 }
 
@@ -33,7 +34,8 @@ body {
 }
 
 #jogo_nei_peca2 {
-    background: pink;
+    background-image: url("/img/nei-02.png");
+    background-size:contain;
     z-index: 2;
 }
 
