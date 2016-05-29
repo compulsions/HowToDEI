@@ -14,6 +14,7 @@ body {
     margin: 10% 0;
 }
 
+
 .peca_jogo_nei {
     width: 10vh;
     height: 10vh;
@@ -27,11 +28,8 @@ body {
 }
 
 #jogo_nei_objectivo1 {
-    position: absolute;
-    top: 40wh;
-    right: 10vw;
-    background: white;
-    z-index: 1;
+    top: 40%;
+    right: 70%;
 }
 
 #jogo_nei_peca2 {
@@ -40,9 +38,32 @@ body {
 }
 
 #jogo_nei_objectivo2 {
+    top: 80%;
+    right: 80%;
+}
+
+#jogo_nei_peca3 {
+    background: powderblue;
+    z-index: 2;
+}
+
+#jogo_nei_objectivo3 {
+    top: 30%;
+    left: 60%;
+}
+
+#jogo_nei_peca4 {
+    background: orange;
+    z-index: 2;
+}
+
+#jogo_nei_objectivo4 {
+    top: 60%;
+    left: 85%;
+}
+
+.objectivo {
     position: absolute;
-    top: 50vh;
-    right: 40vw;
     background: white;
     z-index: 1;
 }

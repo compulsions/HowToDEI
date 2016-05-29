@@ -107,15 +107,6 @@ body {
     
 }
 
-
-.jogo_nei {
-    width: 100%;
-    height: 60vh;
-    background: powderblue;
-    text-align: center;
-    margin: 20px 0;
-}
-
 /** Botão para voltar para trás **/
 
 .btn_back{
