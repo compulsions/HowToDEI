@@ -19,7 +19,10 @@ body {
     width: 10vh;
     height: 10vh;
     padding: 3% 1%;
-    font: 300 15px "Slabo 27px";
+}
+
+.peca_jogo_nei.move:hover {
+    cursor: grab !important;
 }
 
 #jogo_nei_peca1 {
