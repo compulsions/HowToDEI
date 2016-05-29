@@ -1,6 +1,8 @@
 body {
     text-align: center;
     padding: 0 100px;
+    min-height: 100vh;
+    min-width: 100vw;
 }
 
 /* JOGO NEI */
@@ -65,6 +67,7 @@ body {
 /* JOGO BAR */
 .menu_bar {
     font: 300 18px "Slabo 27px";
+    margin: 4% 0;
 }
 
 .peca_jogo_bar {
@@ -125,7 +128,7 @@ body {
 }
 
 .clicado {
-    border: 5px solid greenyellow;
+    border: 5px solid deepskyblue;
     transition: linear 1s;
 }
 
