@@ -40,7 +40,7 @@ body {
 #jogo_nei_objectivo2 {
     position: absolute;
     top: 50vh;
-    right: 70vw;
+    right: 40vw;
     background: white;
     z-index: 1;
 }
