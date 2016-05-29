@@ -101,7 +101,10 @@ body {
 }
 
 .texto_visita {
+    font: 400 20px "Roboto";
     text-align: center;
+    color: black;
+    
 }
 
 
