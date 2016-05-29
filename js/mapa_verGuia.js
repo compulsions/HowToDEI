@@ -50,12 +50,12 @@ $(function() {
         
        $("#floor4").click( function(){
            $('.pontos_visivel').removeClass('pontos_visivel');
-           $('#locaisEstudo_PontosP4').addClass('pontos_visivel');
+           $('#locaisEstudo_pontosP4').addClass('pontos_visivel');
         });
         
        $("#floor5").click( function(){ 
            $('.pontos_visivel').removeClass('pontos_visivel');
-           $('#locaisEstudo_PontosP5').addClass('pontos_visivel');
+           $('#locaisEstudo_pontosP5').addClass('pontos_visivel');
  
        });
         
@@ -166,6 +166,7 @@ $(function() {
             $('.pontos_visivel').removeClass('pontos_visivel');
             $('#locaisImportantes_pontosP4').addClass('pontos_visivel');
           });
+        
         $("#LocaisEstudo").click( function(){
             $('.pontos_visivel').removeClass('pontos_visivel');
             $('#locaisEstudo_pontosP4').addClass('pontos_visivel');
@@ -175,6 +176,7 @@ $(function() {
             $('.pontos_visivel').removeClass('pontos_visivel');
             $('#locaisConvivio_pontos').addClass('pontos_visivel');
           });
+        
         $("#InfoWC").click( function(){
             $('.pontos_visivel').removeClass('pontos_visivel');
             $('#wcs_pontosP4').addClass('pontos_visivel');
